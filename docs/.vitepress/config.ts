@@ -1,6 +1,7 @@
 // https://vitepress.vuejs.org/config/app-configs
 export default {
   title: "AI Development Workflow",
+  base: "/ai-development-workflow/",
   themeConfig: {
     sidebar: [
       {
