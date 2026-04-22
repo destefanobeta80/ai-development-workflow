@@ -96,9 +96,18 @@ Se le modifiche residue sono piccole, dillo. Se invece il piano ha ancora debole
 ## Fase 2: Scomporre {#fase-2-scomporre}
 
 ```text
-Rileggi AGENTS.md, il piano attuale e il template task del repository.
+Rileggi AGENTS.md e il piano attuale.
 
-Scomponi il piano in task piccoli, autonomi e implementabili. Usa esattamente il template task del progetto per ogni task.
+Scomponi il piano in task piccoli, autonomi e implementabili.
+
+Per ogni task usa sempre questa struttura:
+
+Titolo task
+Contesto
+Obiettivo
+Vincoli
+Piano
+Verifica
 
 Ogni task deve avere uno scopo singolo, un perimetro chiaro e una verifica minima concreta. Non voglio task generici, non voglio task troppo grandi e non voglio task che costringano chi implementa a reinterpretare il piano.
 

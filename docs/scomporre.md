@@ -12,16 +12,25 @@ Qui il piano smette di essere una buona idea generale e diventa lavoro eseguibil
 
 Ogni task deve avere un perimetro netto. Deve poter essere assegnato senza lasciare decisioni ambigue a chi implementa.
 
-La scomposizione va fatta usando il template task del repository. Se un task è troppo grosso, va spezzato prima, non durante l'implementazione.
+Il formato del task va definito qui, nella fase di scomposizione. Se un task è troppo grosso, va spezzato prima, non durante l'implementazione.
 
 ---
 
 ## Prompt
 
 ```text
-Rileggi AGENTS.md, il piano attuale e il template task del repository.
+Rileggi AGENTS.md e il piano attuale.
 
-Scomponi il piano in task piccoli, autonomi e implementabili. Usa esattamente il template task del progetto per ogni task.
+Scomponi il piano in task piccoli, autonomi e implementabili.
+
+Per ogni task usa sempre questa struttura:
+
+Titolo task
+Contesto
+Obiettivo
+Vincoli
+Piano
+Verifica
 
 Ogni task deve avere uno scopo singolo, un perimetro chiaro e una verifica minima concreta. Non voglio task generici, non voglio task troppo grandi e non voglio task che costringano chi implementa a reinterpretare il piano.
 

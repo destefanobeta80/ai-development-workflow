@@ -22,10 +22,9 @@ export default {
         ]
       },
       {
-        text: "Strumenti Operativi",
+        text: "Strumenti",
         items: [
-          { text: "Libreria prompt", link: "/libreria-prompt" },
-          { text: "Template task", link: "/template-task" }
+          { text: "Libreria prompt", link: "/libreria-prompt" }
         ]
       }
     ]
