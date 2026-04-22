@@ -1,56 +1,35 @@
-# Fase 4: Implementare
+# Fase 3: Implementare
 
 ## Scopo
 
-Scrivere codice in modo controllato e focalizzato.
+Eseguire un task bene, senza ripensare tutto da capo.
 
 ---
 
 ## Descrizione
 
-Si implementa un task alla volta.
+Se Comprendere, Progettare e Scomporre sono stati fatti bene, qui il lavoro accelera.
 
-Devi:
-- rispettare il piano
-- limitare lo scope
-- evitare modifiche non richieste
-
-Errori tipici:
-- “già che ci sono cambio anche…”
-- allargare il perimetro
-- fidarsi ciecamente dell’AI
+L'implementazione deve essere concentrata, locale e disciplinata. Non è il momento di allargare il perimetro, improvvisare architettura o cambiare il piano senza segnalarlo.
 
 ---
 
 ## Prompt
 
-Agisci come sviluppatore Python senior.
+```text
+Rileggi AGENTS.md e implementa solo il task assegnato.
 
-Implementa SOLO questo task.
+Prima di scrivere codice, riassumi cosa farai, quali file pensi di toccare, quali rischi vedi e cosa non toccherai.
 
-Prima:
-- riassumi cosa farai
-- indica i file coinvolti
-- evidenzia rischi
-- conferma cosa NON toccherai
+Poi implementa restando strettamente nello scope. Se trovi incoerenze nel task, nel piano o nel contesto, non improvvisare: fermati e segnalale.
 
-Poi implementa.
-
-Vincoli:
-- non allargare lo scope
-- segui le convenzioni
-- se trovi incoerenze, fermati
-
-Alla fine:
-- spiega cosa hai fatto file per file
+Quando hai finito, spiega in modo concreto cosa hai cambiato, che verifiche hai fatto e che cosa merita attenzione nella review.
+```
 
 ---
 
 ## Condizione di uscita
 
-Il task è:
-- completato
-- coerente con il piano
-- limitato allo scope
+Il task è finito quando è coerente con il piano, limitato allo scope e abbastanza pulito da passare alla validazione senza ambiguità.
 
-Se hai deviato, torna indietro.
+Se per completarlo hai dovuto inventare parti importanti, a monte c'è un problema.

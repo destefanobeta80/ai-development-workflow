@@ -1,51 +1,37 @@
-# Fase 3: Scomporre
+# Fase 2: Scomporre
 
 ## Scopo
 
-Trasformare la soluzione in passi piccoli e implementabili.
+Trasformare il piano in task precisi.
 
 ---
 
 ## Descrizione
 
-Prendi il piano e lo dividi in task semplici.
+Qui il piano smette di essere una buona idea generale e diventa lavoro eseguibile.
 
-Ogni task deve essere:
-- chiaro
-- limitato
-- verificabile
+Ogni task deve avere un perimetro netto. Deve poter essere assegnato senza lasciare decisioni ambigue a chi implementa.
 
-Errori tipici:
-- task troppo grandi
-- task vaghi
-- mescolare più responsabilità
+La scomposizione va fatta usando il template task del repository. Se un task è troppo grosso, va spezzato prima, non durante l'implementazione.
 
 ---
 
 ## Prompt
 
-Agisci come engineering manager.
+```text
+Rileggi AGENTS.md, il piano attuale e il template task del repository.
 
-Trasforma la soluzione in task piccoli.
+Scomponi il piano in task piccoli, autonomi e implementabili. Usa esattamente il template task del progetto per ogni task.
 
-Per ogni task:
-- obiettivo
-- cosa toccare
-- cosa NON toccare
-- verifica minima
+Ogni task deve avere uno scopo singolo, un perimetro chiaro e una verifica minima concreta. Non voglio task generici, non voglio task troppo grandi e non voglio task che costringano chi implementa a reinterpretare il piano.
 
-Regole:
-- un task = uno scopo
-- deve essere testabile da solo
-- se è grande, spezzalo
+Se un task è troppo ampio, spezzalo. Se due task si sovrappongono, sistemali. Se manca un passaggio logico, aggiungilo.
+```
 
 ---
 
 ## Condizione di uscita
 
-Hai una lista di task:
-- chiari
-- piccoli
-- indipendenti
+I task sono pronti quando si possono eseguire uno alla volta senza dover reinventare il piano.
 
-Se un task è ambiguo, non è pronto.
+Se un task è ancora ambiguo, non è ancora un task.

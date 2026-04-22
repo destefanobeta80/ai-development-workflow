@@ -1,16 +1,16 @@
 # Titolo task
 
 ## Contesto
-Cosa sta succedendo
+Contesto minimo necessario per capire il task
 
 ## Obiettivo
 Risultato atteso
 
 ## Vincoli
-Cosa non rompere
+Cosa non va cambiato, rotto o allargato
 
 ## Piano
-Come farlo (anche breve)
+Passi da eseguire
 
 ## Verifica
-Come controllare che funzioni
+Come controllare che il task sia corretto

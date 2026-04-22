@@ -1,49 +1,38 @@
-# Fase 6: Spiegare
+# Fase 5: Spiegare
 
 ## Scopo
 
-Dimostrare di aver capito il codice prodotto.
+Assicurarsi di aver capito davvero il codice prodotto.
 
 ---
 
 ## Descrizione
 
-Qui verifichi la comprensione.
+Questa fase chiude il workflow.
 
-Devi saper spiegare:
-- cosa fa il codice
-- perché è stato scritto così
-- come risolve il problema
-
-Questa è una fase obbligatoria.
-
-Errori tipici:
-- “funziona quindi va bene”
-- non saper spiegare il flusso
-- delegare tutto all’AI
+Il codice va saputo raccontare. Non solo a blocchi, ma come flusso, come scelte e come compromessi. Se non riesci a spiegare perché è stato fatto così, non lo stai ancora controllando bene.
 
 ---
 
 ## Prompt
 
-Agisci come tutor tecnico.
+```text
+Rileggi AGENTS.md e spiegami il codice prodotto come se dovessi difenderlo in review senza poter delegare la risposta al modello.
 
-Spiegami il codice come se dovessi difenderlo in review.
+Voglio capire bene:
+- come funziona il flusso del codice
+- perché sono state fatte queste scelte
+- come le modifiche rispondono al task
+- quali punti delicati o rischiosi restano
+- quali domande dovrei saper gestire in review
 
-Restituisci:
-- flusso del codice
-- motivo delle modifiche
-- collegamento con il requisito
-- possibili problemi
-- domande che devo saper rispondere
+Chiudi con una sintesi breve, chiara e difendibile.
+```
 
 ---
 
 ## Condizione di uscita
 
-Sai spiegare:
-- cosa hai fatto
-- perché lo hai fatto
-- cosa potrebbe andare storto
+La fase è chiusa quando puoi spiegare il codice senza leggere una risposta generata al posto tuo.
 
-Se non sai spiegarlo, non è pronto.
+Se riesci solo a descrivere cosa fa, ma non perché è fatto così, il lavoro non è ancora davvero chiuso.
