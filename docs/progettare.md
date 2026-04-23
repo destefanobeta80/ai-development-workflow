@@ -4,8 +4,6 @@
 
 Trasformare la comprensione in un piano di lavoro solido.
 
----
-
 ## Descrizione
 
 Qui si passa dal quadro generale a un piano dettagliato.
@@ -13,8 +11,6 @@ Qui si passa dal quadro generale a un piano dettagliato.
 È la fase che va iterata più volte. L'obiettivo non è produrre il primo piano plausibile, ma arrivare a un piano che regga bene alle critiche.
 
 La sequenza giusta è: creare il piano, criticarlo, integrare il meglio delle critiche, ripetere. Quando i diff proposti diventano piccoli e poco sostanziali, si è vicini alla convergenza.
-
----
 
 ## Prompt
 
@@ -67,8 +63,6 @@ Voglio:
 
 Se le modifiche residue sono piccole, dillo. Se invece il piano ha ancora debolezze strutturali, dillo senza attenuarle.
 ```
-
----
 
 ## Condizione di uscita
 

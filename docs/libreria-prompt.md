@@ -4,8 +4,6 @@ Prompt pronti da usare nelle varie fasi del workflow.
 
 Sono volutamente generici. L'idea è riusarli in progetti diversi, lasciando che il contesto venga letto da `AGENTS.md`, dai file del repository e dal task corrente.
 
----
-
 ## Fase 0: Comprendere {#fase-0-comprendere}
 
 ```text
@@ -42,8 +40,6 @@ Non voglio ancora un piano dettagliato. Voglio capire il campo di gioco:
 
 Restituisci una sintesi ragionata della futura soluzione possibile, con pro e contro degli approcci realistici, ma senza entrare ancora nella progettazione operativa.
 ```
-
----
 
 ## Fase 1: Progettare {#fase-1-progettare}
 
@@ -91,8 +87,6 @@ Voglio:
 Se le modifiche residue sono piccole, dillo. Se invece il piano ha ancora debolezze strutturali, dillo senza attenuarle.
 ```
 
----
-
 ## Fase 2: Scomporre {#fase-2-scomporre}
 
 ```text
@@ -114,8 +108,6 @@ Ogni task deve avere uno scopo singolo, un perimetro chiaro e una verifica minim
 Se un task è troppo ampio, spezzalo. Se due task si sovrappongono, sistemali. Se manca un passaggio logico, aggiungilo.
 ```
 
----
-
 ## Fase 3: Implementare {#fase-3-implementare}
 
 ```text
@@ -127,8 +119,6 @@ Poi implementa restando strettamente nello scope. Se trovi incoerenze nel task, 
 
 Quando hai finito, spiega in modo concreto cosa hai cambiato, che verifiche hai fatto e che cosa merita attenzione nella review.
 ```
-
----
 
 ## Fase 4: Validare {#fase-4-validare}
 
@@ -164,8 +154,6 @@ Voglio:
 Se il codice sembra funzionare ma resta difficile da difendere, dillo chiaramente.
 ```
 
----
-
 ## Fase 5: Spiegare {#fase-5-spiegare}
 
 ```text
@@ -180,8 +168,6 @@ Voglio capire bene:
 
 Chiudi con una sintesi breve, chiara e difendibile.
 ```
-
----
 
 ## Uso rapido
 

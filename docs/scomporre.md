@@ -4,8 +4,6 @@
 
 Trasformare il piano in task precisi.
 
----
-
 ## Descrizione
 
 Qui il piano smette di essere una buona idea generale e diventa lavoro eseguibile.
@@ -13,8 +11,6 @@ Qui il piano smette di essere una buona idea generale e diventa lavoro eseguibil
 Ogni task deve avere un perimetro netto. Deve poter essere assegnato senza lasciare decisioni ambigue a chi implementa.
 
 Il formato del task va definito qui, nella fase di scomposizione. Se un task è troppo grosso, va spezzato prima, non durante l'implementazione.
-
----
 
 ## Prompt
 
@@ -36,8 +32,6 @@ Ogni task deve avere uno scopo singolo, un perimetro chiaro e una verifica minim
 
 Se un task è troppo ampio, spezzalo. Se due task si sovrappongono, sistemali. Se manca un passaggio logico, aggiungilo.
 ```
-
----
 
 ## Condizione di uscita
 

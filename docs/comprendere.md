@@ -4,8 +4,6 @@
 
 Capire bene il contesto prima di entrare nel piano.
 
----
-
 ## Descrizione
 
 Questa fase unisce comprensione del problema e definizione del contesto.
@@ -15,8 +13,6 @@ Se esiste già una soluzione, va studiata prima di modificarla. Bisogna capire c
 Se invece si parte da zero, bisogna leggere bene tutti i materiali disponibili e trasformarli in un contesto operativo chiaro. Il risultato atteso è lo stesso: avere una base solida per decidere bene dopo.
 
 Qui non si scrive ancora il piano dettagliato. Si chiarisce il terreno.
-
----
 
 ## Prompt
 
@@ -58,8 +54,6 @@ Non voglio ancora un piano dettagliato. Voglio capire il campo di gioco:
 
 Restituisci una sintesi ragionata della futura soluzione possibile, con pro e contro degli approcci realistici, ma senza entrare ancora nella progettazione operativa.
 ```
-
----
 
 ## Condizione di uscita
 

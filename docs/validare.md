@@ -4,15 +4,11 @@
 
 Verificare davvero che il lavoro regga.
 
----
-
 ## Descrizione
 
 Qui non basta chiedersi se il codice gira. Bisogna capire se è corretto, se rispetta il task, se introduce regressioni e se regge una review seria.
 
 Anche questa fase è iterativa. Prima si può fare una self-review severa. Poi conviene passare il lavoro a un agente esterno che non ha scritto il codice e quindi lo legge con occhi più freddi.
-
----
 
 ## Prompt
 
@@ -51,8 +47,6 @@ Voglio:
 
 Se il codice sembra funzionare ma resta difficile da difendere, dillo chiaramente.
 ```
-
----
 
 ## Condizione di uscita
 

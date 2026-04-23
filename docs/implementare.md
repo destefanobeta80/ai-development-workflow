@@ -4,15 +4,11 @@
 
 Eseguire un task bene, senza ripensare tutto da capo.
 
----
-
 ## Descrizione
 
 Se Comprendere, Progettare e Scomporre sono stati fatti bene, qui il lavoro accelera.
 
 L'implementazione deve essere concentrata, locale e disciplinata. Non è il momento di allargare il perimetro, improvvisare architettura o cambiare il piano senza segnalarlo.
-
----
 
 ## Prompt
 
@@ -25,8 +21,6 @@ Poi implementa restando strettamente nello scope. Se trovi incoerenze nel task, 
 
 Quando hai finito, spiega in modo concreto cosa hai cambiato, che verifiche hai fatto e che cosa merita attenzione nella review.
 ```
-
----
 
 ## Condizione di uscita
 

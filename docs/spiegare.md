@@ -4,15 +4,11 @@
 
 Assicurarsi di aver capito davvero il codice prodotto.
 
----
-
 ## Descrizione
 
 Questa fase chiude il workflow.
 
 Il codice va saputo raccontare. Non solo a blocchi, ma come flusso, come scelte e come compromessi. Se non riesci a spiegare perché è stato fatto così, non lo stai ancora controllando bene.
-
----
 
 ## Prompt
 
@@ -28,8 +24,6 @@ Voglio capire bene:
 
 Chiudi con una sintesi breve, chiara e difendibile.
 ```
-
----
 
 ## Condizione di uscita
 

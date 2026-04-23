@@ -15,8 +15,6 @@ Qui l'idea di fondo è pratica:
 - iterare dove costa poco
 - validare e spiegare prima di chiudere
 
----
-
 ## Workflow
 
 <div class="workflow-diagram" style="position: relative; width: min(100%, 600px); margin: 0 0 1rem;">
@@ -73,8 +71,6 @@ Qui l'idea di fondo è pratica:
   </div>
 </div>
 
----
-
 ## Principi
 
 **1. Pianificare costa meno che correggere**  
@@ -91,8 +87,6 @@ Il primo review pass non basta.
 
 **4. Il codice va saputo spiegare**  
 Se non sai raccontare come funziona, non lo stai controllando davvero.
-
----
 
 ## Come usarlo
 
