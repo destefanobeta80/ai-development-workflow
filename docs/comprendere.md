@@ -30,33 +30,37 @@ Un risultato importante della fase è `AGENTS.md`: se non esiste, va creato; se 
 ### Comprendere il contesto e preparare `AGENTS.md`
 
 ```text
-Leggi con attenzione tutto il contesto disponibile e rileggi AGENTS.md se esiste già.
+Rileggi AGENTS.md se esiste. Analizza repository, documenti, specifiche, note e materiali disponibili.
 
-Se ci sono documenti, specifiche, note o materiali cliente, usali per capire:
+Ricava solo informazioni supportate dalle fonti disponibili:
 - contesto del progetto
 - obiettivo da raggiungere
+- utenti/workflow principali
 - vincoli importanti
+- stack e convenzioni
+- rischi
 - dubbi o informazioni mancanti
 
-Se esiste già una soluzione, esplora il repository e aiutami a capirla:
-- spiegami in chat a cosa serve
-- descrivi la sua architettura principale
-- indica lo stato attuale del progetto
-- evidenzia vincoli, assunzioni e parti delicate
+Se esiste già una soluzione, esplora il repository:
+- sintetizza a cosa serve e la sua architettura principale
+- valuta lo stato attuale del codice
+- individua punti di ingresso, test e verifiche disponibili
+- mappa vincoli, assunzioni e parti delicate
 
-Poi crea o aggiorna AGENTS.md in modo che diventi una guida pratica per le prossime sessioni di pianificazione e programmazione.
+Poi crea o aggiorna AGENTS.md come manuale operativo per le prossime sessioni.
 
-Se AGENTS.md non esiste, crealo da zero. Se esiste già, miglioralo con le informazioni utili emerse.
+Se AGENTS.md non esiste, crealo da zero. Se esiste già, preserva le regole valide e aggiungi solo informazioni utili, verificabili e riutilizzabili.
 
-In questa fase non scegliere ancora la soluzione, non scrivere codice e non creare ancora un piano di lavoro dettagliato.
+In questa fase non scegliere la soluzione finale, non scrivere codice e non creare PLAN.md.
 
-Voglio un output concreto, non teorico:
+Output richiesto:
 1. sintesi del contesto attuale
 2. sintesi della soluzione attuale, se esiste
 3. obiettivo da raggiungere
 4. cosa è già chiaro
 5. cosa manca ancora
-6. AGENTS.md creato o aggiornato
+6. assunzioni dichiarate
+7. AGENTS.md creato o aggiornato
 ```
 
 ## Risultato

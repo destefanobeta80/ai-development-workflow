@@ -16,14 +16,22 @@ Durante l'implementazione il perimetro resta quello del task scelto. Se emergono
 
 ## Prompt
 
-```text
-Rileggi AGENTS.md e TASKS.md.
+### Implementare un task
 
-Scegli il primo task libero da implementare:
+```text
+Rileggi AGENTS.md e TASKS.md. Controlla anche lo stato corrente del repository.
+
+Scegli il task libero da implementare:
 - deve avere stato "Da fare"
 - tutte le sue dipendenze devono avere stato "Completato"
+- preferisci il task che sblocca più lavoro a valle
 
-Prima di scrivere codice, aggiorna lo stato del task a "In corso" e riassumi:
+Prima di scrivere codice:
+- aggiorna lo stato del task a "In corso"
+- identifica il perimetro esatto
+- verifica che non ci siano modifiche non correlate già presenti
+
+Riassumi:
 1. quale task hai scelto e perché
 2. cosa farai
 3. quali file pensi di toccare
@@ -31,14 +39,21 @@ Prima di scrivere codice, aggiorna lo stato del task a "In corso" e riassumi:
 5. cosa resta fuori scope
 
 Poi implementa restando strettamente nel perimetro del task.
+Non modificare file o logiche fuori dal perimetro concordato, anche se noti miglioramenti possibili altrove.
 
-Se trovi incoerenze tra task, AGENTS.md o codice, fermati e segnalale.
+Fermati e segnala se:
+- il task è ambiguo
+- manca una decisione necessaria
+- il codice contraddice il piano
+- servirebbe modificare fuori scope
+- le dipendenze non sono davvero completate
 
 Quando hai finito:
 1. aggiorna lo stato del task a "In review"
 2. spiega cosa hai cambiato
 3. indica quali verifiche hai fatto
 4. segnala cosa merita attenzione nella review
+5. segnala eventuali follow-up fuori scope, senza implementarli
 ```
 
 ## Risultato

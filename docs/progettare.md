@@ -25,31 +25,37 @@ Ci sono tre tecniche utili:
 ### Creare il piano
 
 ```text
-Rileggi AGENTS.md e lavora sul piano, non sul codice.
+Rileggi AGENTS.md. Lavora solo sul piano: niente codice, niente task esecutivi.
 
 Usa il contesto raccolto, i documenti disponibili e le informazioni già chiarite nella Fase 0.
 
-Voglio un piano dettagliato e spiegabile, salvato in `PLAN.md`. Non scrivere codice. Non limitarti a idee generiche. Vai abbastanza nel dettaglio da guidare bene la scomposizione e l'implementazione successive.
+Crea o aggiorna PLAN.md. Il piano deve essere abbastanza concreto da poter essere trasformato in task senza reinterpretare l'obiettivo.
 
 Il piano deve chiarire:
-- struttura della soluzione
-- scelte principali
+- obiettivo e non-obiettivi
+- workflow utente/sistema
+- architettura proposta
+- scelte tecniche principali e alternative scartate
 - ordine logico del lavoro
-- punti delicati
-- rischi e dipendenze
-- criteri con cui capire se la soluzione regge
+- punti delicati, rischi, dipendenze e failure mode
+- strategia di verifica/test
+- criteri di accettazione
 
-Se ci sono opzioni ancora aperte, non nasconderle: esplicita la scelta consigliata e spiega perché.
+Se ci sono opzioni ancora aperte, scegli una raccomandazione motivata oppure marca la decisione come bloccante.
 
-Alla fine aggiorna `PLAN.md` con la versione corrente del piano.
+Alla fine aggiorna PLAN.md e chiudi con:
+1. decisioni prese
+2. assunzioni
+3. decisioni ancora aperte
+4. gate: pronto per scomposizione? sì/no, con motivo
 ```
 
 ### Criticare il piano con diff
 
 ```text
-Rileggi AGENTS.md e fai una review severa del piano attuale.
+Rileggi AGENTS.md e PLAN.md. Fai una review severa del piano attuale.
 
-Non voglio complimenti e non voglio riscriverlo da zero. Voglio capire cosa non regge bene, cosa è vago, cosa è fragile, cosa manca e cosa complica inutilmente il lavoro.
+Niente complimenti. Niente riscrittura totale se non necessaria. Cerca solo difetti che possono causare rework, ambiguità o implementazioni sbagliate.
 
 Cerca in particolare:
 - errori logici
@@ -57,29 +63,34 @@ Cerca in particolare:
 - parti troppo generiche
 - rischi non gestiti
 - passaggi che potrebbero creare problemi durante l'implementazione
+- criteri di verifica mancanti
+- decisioni rimandate impropriamente
+- dipendenze implicite
 
 Restituisci:
 1. criticità reali, in ordine di importanza
 2. miglioramenti proposti
-3. un diff del piano, il più concreto possibile
+3. diff unified concreto su PLAN.md
+4. giudizio: converge / serve altro giro / non pronto
 
-Il diff deve mostrare cosa cambieresti davvero. Se una parte del piano va bene, lasciala stare. Se le modifiche che proponi sono minime, dillo chiaramente.
+Il diff deve modificare solo le sezioni necessarie. Se una modifica è solo opinabile, separala dalle correzioni necessarie.
 ```
 
 ### Integrare piani di modelli diversi
 
 ```text
-Ho chiesto a più modelli di creare un piano per lo stesso obiettivo. I piani sono diversi e alcuni coprono parti della soluzione meglio di altri.
+Ho più piani per lo stesso obiettivo. Devi creare una versione migliore del piano iniziale.
 
-Analizza con attenzione il piano iniziale e i piani alternativi. Sii onesto su cosa gli altri piani fanno meglio: struttura, rischi, ordine del lavoro, semplicità, robustezza, dettagli tecnici o criteri di verifica.
+Analizza piano iniziale e alternative. Sii intellettualmente onesto su cosa gli altri piani fanno meglio: struttura, rischi, sequenza, semplicità, robustezza, dettagli tecnici, verificabilità.
 
-Il tuo compito non è fare un merge meccanico. Devi prendere le idee migliori, scartare quelle deboli e migliorare il piano iniziale.
+Non fare un merge meccanico. Integra solo idee che migliorano il piano in modo pratico e verificabile.
 
 Voglio:
 1. punti forti reali trovati nei piani alternativi
 2. punti che non integreresti e perché
-3. modifiche proposte al piano iniziale in formato diff
-4. versione aggiornata del piano
+3. modifiche proposte in diff unified su PLAN.md
+4. PLAN.md aggiornato
+5. rischi residui
 
 Non indicare nel piano finale quale idea viene da quale modello. Il risultato deve essere un piano unico, più solido e più pratico.
 ```
@@ -87,24 +98,21 @@ Non indicare nel piano finale quale idea viene da quale modello. Il risultato de
 ### Revisionare il piano in una nuova sessione
 
 ```text
-Rivedi con attenzione questo piano come se lo vedessi per la prima volta.
+Leggi AGENTS.md e PLAN.md.
 
-Voglio le migliori revisioni possibili per renderlo più chiaro, robusto, semplice da implementare e facile da verificare.
+Obiettivo: rendere PLAN.md più chiaro, robusto, implementabile e verificabile.
 
 Per ogni modifica proposta, spiegami:
 - perché migliora il piano
 - quale rischio riduce
 - quale parte del piano cambierebbe
+- se è necessaria o solo migliorativa
 
 Restituisci:
 1. problemi principali trovati
 2. modifiche consigliate in ordine di importanza
-3. diff concreto rispetto al piano originale
+3. diff unified concreto
 4. giudizio finale: il piano è vicino alla convergenza o serve un altro giro?
-
-Piano da revisionare:
-
-[INCOLLA QUI IL PIANO COMPLETO]
 ```
 
 ## Risultato

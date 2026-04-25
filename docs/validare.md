@@ -21,33 +21,34 @@ Quando le review segnalano solo migliorie minori e il task è coerente con piano
 ### Self-review dell'agente
 
 ```text
-Rileggi AGENTS.md, TASKS.md e il codice che hai appena prodotto.
+Rileggi AGENTS.md, TASKS.md, il task in review e il diff delle modifiche prodotte.
 
-Fai una self-review. Non dare per scontato il tuo lavoro: trattalo come se fosse codice scritto da un altro.
+Fai self-review come se il codice fosse stato scritto da un altro agente.
 
 Controlla:
 - correttezza rispetto al task
 - coerenza con il task
+- rispetto del perimetro
 - rischi di regressione
 - edge case
 - qualità del codice
 - verifiche mancanti
+- aggiornamenti necessari a documentazione o task
 
 Restituisci:
 1. problemi trovati, in ordine di importanza
 2. correzioni da fare subito
 3. verifiche da aggiungere o ripetere
-4. verdetto: pronto per review esterna oppure serve un altro giro
+4. diff correttivo, se necessario
+5. verdetto: pronto per review esterna / serve correzione
 ```
 
 ### Review di un agente esterno
 
 ```text
-Rileggi AGENTS.md e TASKS.md.
+Rileggi AGENTS.md, TASKS.md, il task in review e il diff non committato.
 
-Individua il task con stato "In review" e analizza il diff delle modifiche non committate rispetto alla base corrente.
-
-Fai una review del codice prodotto per quel task e valuta se il risultato è corretto, chiaro e spiegabile.
+Individua il task con stato "In review". Se ce ne sono più di uno, scegli quello con ID più basso e dichiaralo. Analizza il diff delle modifiche non committate.
 
 Controlla:
 - correttezza rispetto al task
@@ -55,14 +56,17 @@ Controlla:
 - rischi o regressioni possibili
 - punti poco chiari o fragili
 - verifiche mancanti
+- modifiche fuori scope
+- compatibilità con convenzioni del repository
 
-Voglio:
+Restituisci:
 1. problemi trovati
-2. severità
+2. severità: bloccante / minore / suggerimento
 3. correzioni richieste
-4. verdetto finale: completabile, completabile con migliorie minori, non completabile
+4. verifiche richieste
+5. verdetto finale: completabile / completabile con note / non completabile
 
-Se trovi solo migliorie minori, aggiorna lo stato del task a "Completato". Se trovi problemi sostanziali, lascia il task "In review" e indica cosa correggere.
+Aggiorna il task a "Completato" solo se non ci sono problemi bloccanti e le verifiche minime sono state eseguite. Altrimenti lascialo "In review".
 ```
 
 ## Risultato

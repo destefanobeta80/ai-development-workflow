@@ -25,38 +25,41 @@ Anche questa fase va iterata. Dopo una prima scomposizione bisogna controllare s
 ```text
 Rileggi AGENTS.md e PLAN.md.
 
-Scomponi il piano in task atomici, autonomi e implementabili.
+Trasforma il piano in task autonomi, implementabili e verificabili. Crea o aggiorna TASKS.md.
 
-Crea un file markdown chiamato `TASKS.md`.
-
-Ogni task deve essere abbastanza specifico da poter essere assegnato a una persona o a un agente senza dover reinterpretare il piano. Non significa creare task minuscoli: significa creare unità di lavoro con obiettivo, perimetro, dipendenze e verifica chiari.
+Ogni task deve essere self-contained: un agente deve poterlo implementare senza rileggere tutto PLAN.md.
+Non creare task minuscoli. Crea unità di lavoro con obiettivo, contesto, perimetro, dipendenze, istruzioni e verifica chiari.
 
 Per ogni task usa sempre questa struttura:
 
-T01 - Titolo task
-Stato
-Dipende da
-Contesto
-Obiettivo
-Perimetro
-Istruzioni
-Verifica
+### T01 - Titolo task
+- **Stato:** Da fare / In corso / In review / Completato
+- **Dipende da:** nessuna / Txx, Tyy
+- **Contesto:** informazioni necessarie dal piano
+- **Obiettivo:** cosa deve ottenere il task
+- **Perimetro incluso:** cosa va fatto
+- **Perimetro escluso:** cosa non va fatto
+- **Istruzioni:** decisioni già prese, vincoli e passaggi essenziali
+- **File/aree probabili:** se deducibili
+- **Verifica:** test, controlli manuali o criteri di accettazione
+- **Note di rischio:** edge case, regressioni o punti delicati
 
 Regole:
 - usa ID semplici come T01, T02, T03
-- in "Stato" usa "Da fare", "In corso", "In review" o "Completato"
-- in "Dipende da" scrivi "nessuna" oppure gli ID dei task necessari prima
-- in "Perimetro" separa cosa è incluso e cosa non è incluso
-- in "Istruzioni" inserisci le decisioni già prese e i passaggi operativi essenziali
-- in "Verifica" indica controlli concreti, test o criteri di accettazione
+- ogni elemento materiale del piano deve comparire in almeno un task
+- ogni task deve avere una verifica concreta
+- nessun task deve richiedere decisioni architetturali nuove
+- se una decisione manca, segnala il blocco invece di nasconderlo
 
 Alla fine controlla la sequenza:
 1. quali task possono partire subito
 2. quali task sono bloccati da altri
 3. se ci sono sovrapposizioni o buchi logici
 4. se qualche task è ancora troppo vago o troppo grande
+5. se ogni parte del piano è coperta
+6. se ogni dipendenza è esplicita
 
-Se trovi problemi, correggi `TASKS.md`. La scomposizione è pronta solo quando copre tutto il piano e le dipendenze sono coerenti.
+Correggi TASKS.md finché la copertura è completa, le dipendenze sono coerenti e i task sono eseguibili.
 ```
 
 ### Verificare `TASKS.md` rispetto al piano
@@ -64,7 +67,7 @@ Se trovi problemi, correggi `TASKS.md`. La scomposizione è pronta solo quando c
 ```text
 Rileggi AGENTS.md, PLAN.md e TASKS.md.
 
-Fai una review della scomposizione dei task rispetto al piano.
+Verifica che TASKS.md sia una traduzione fedele, completa e implementabile di PLAN.md.
 
 Controlla:
 - se tutti i punti importanti del piano sono coperti da almeno un task
@@ -74,16 +77,20 @@ Controlla:
 - se le dipendenze tra task sono corrette
 - se qualche task richiede decisioni che dovevano essere già prese nel piano
 - se ogni task ha una verifica concreta
+- se ogni task è self-contained
+- se esistono task pronti subito
+- se il grafo delle dipendenze ha blocchi inutili
 
 Restituisci:
 1. problemi trovati, in ordine di importanza
-2. task da aggiungere
-3. task da dividere, unire o riscrivere
-4. dipendenze da correggere
-5. diff proposto per aggiornare TASKS.md
-6. giudizio finale: TASKS.md è pronto per l'implementazione o serve un altro giro?
+2. matrice sintetica sezione PLAN.md - task collegati
+3. task da aggiungere
+4. task da dividere, unire o riscrivere
+5. dipendenze da correggere
+6. diff unified su TASKS.md
+7. giudizio finale: pronto / serve altro giro / tornare al piano
 
-Non riscrivere tutto se non serve. Correggi solo ciò che rende i task più chiari, completi e implementabili.
+Non riscrivere tutto se non serve. Correggi solo ciò che aumenta copertura, chiarezza, implementabilità o verificabilità.
 ```
 
 ## Risultato

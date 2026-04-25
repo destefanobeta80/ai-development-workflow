@@ -14,12 +14,12 @@ Questa fase serve a verificare che il lavoro non sia stato solo accettato, ma da
 
 ## Prompt
 
+### Spiegare il lavoro prodotto
+
 ```text
-Rileggi AGENTS.md, TASKS.md e il codice prodotto.
+Rileggi AGENTS.md, TASKS.md, il task completato e il diff/codice prodotto.
 
-Aiutami a verificare che io abbia compreso davvero tutto il lavoro prodotto.
-
-Spiegami in modo chiaro:
+Spiega il lavoro in modo che un PM o reviewer tecnico possa capirlo e verificarlo:
 - cosa è stato implementato
 - perché questa soluzione risponde al task
 - quali scelte del piano sono state applicate
@@ -27,11 +27,14 @@ Spiegami in modo chiaro:
 - quali file o parti sono più importanti
 - quali punti delicati o rischiosi restano
 - quali verifiche sono state fatte
+- come rifare la verifica
+- cosa non è stato fatto perché fuori scope
 
 Chiudi con una sintesi breve che distingua:
 1. cosa è stato fatto
 2. perché è stato fatto così
 3. come funziona nel codice
+4. come verificare che funzioni
 ```
 
 ## Risultato

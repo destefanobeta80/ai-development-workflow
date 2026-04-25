@@ -3,11 +3,16 @@ export default {
   title: "AI Development Workflow",
   base: "/ai-development-workflow/",
   themeConfig: {
+    outlineTitle: "In questa pagina",
+    docFooter: {
+      prev: "Pagina precedente",
+      next: "Pagina successiva"
+    },
     sidebar: [
       {
-        text: "Workflow",
+        text: "Inizio",
         items: [
-          { text: "Home", link: "/" }
+          { text: "Panoramica", link: "/" }
         ]
       },
       {
