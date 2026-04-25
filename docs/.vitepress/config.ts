@@ -29,7 +29,8 @@ export default {
       {
         text: "Strumenti",
         items: [
-          { text: "Libreria prompt", link: "/libreria-prompt" }
+          { text: "Libreria prompt", link: "/libreria-prompt" },
+          { text: "Miglioramento continuo", link: "/miglioramento-continuo" }
         ]
       }
     ]
