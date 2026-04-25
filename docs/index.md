@@ -1,24 +1,19 @@
 # AI Development Workflow
 
-Un workflow semplice per usare l'AI nello sviluppo senza perdere controllo.
+Un workflow semplice per usare l'AI nello sviluppo.
 
-## Perché esiste
+## Obiettivo
 
-L'AI accelera il lavoro, ma porta anche un rischio chiaro: scrivere troppo presto.
+L'AI accelera il lavoro, ma porta anche il rischio di non comprendere cosa si è prodotto.
 
-Il punto non è generare più codice. Il punto è arrivare al codice dopo aver capito il contesto, dopo aver fatto convergere il piano e dopo aver definito task chiari.
+Il punto non è solo generare più codice. È importante arrivare al codice dopo aver capito il contesto, definito un buon piano e preparato task precisi e puntuali.
 
-Qui l'idea di fondo è pratica:
-
-- capire bene prima di decidere
-- decidere bene prima di implementare
-- iterare dove costa poco
-- validare e spiegare prima di chiudere
+Il workflow produce artefatti semplici da riusare: contesto, piano, task, codice validato e spiegazione finale.
 
 ## Workflow
 
 <div class="workflow-diagram" style="position: relative; width: min(100%, 600px); margin: 0 0 1rem;">
-  <svg viewBox="0 0 600 480" width="100%" xmlns="http://www.w3.org/2000/svg" aria-label="Workflow AI development" style="display: block; width: 100%; height: auto;">
+  <svg viewBox="0 0 600 400" width="100%" xmlns="http://www.w3.org/2000/svg" aria-label="Workflow AI development" style="display: block; width: 100%; height: auto;">
     <defs>
       <marker id="arrow" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
         <path d="M0,0 L0,6 L6,3 z" fill="#555" />
@@ -41,57 +36,69 @@ Qui l'idea di fondo è pratica:
     <line x1="180" y1="180" x2="180" y2="205" stroke="#555" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow)"/>
     <line x1="180" y1="250" x2="180" y2="275" stroke="#555" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow)"/>
     <line x1="180" y1="320" x2="180" y2="345" stroke="#555" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow)"/>
-    <line x1="310" y1="85" x2="372" y2="85" stroke="#555" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow)"/>
+    <path d="M310 85 H372 V100 H316" fill="none" stroke="#555" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
     <text x="388" y="90" font-size="12" fill="#666">
       <tspan x="388" dy="0">Loop fino a</tspan>
       <tspan x="388" dy="12">convergenza</tspan>
     </text>
-    <line x1="372" y1="100" x2="316" y2="100" stroke="#555" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow)"/>
-    <line x1="310" y1="295" x2="372" y2="295" stroke="#555" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow)"/>
-    <text x="388" y="300" font-size="12" fill="#666">
+    <path d="M310 155 H372 V170 H316" fill="none" stroke="#555" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+    <text x="388" y="160" font-size="12" fill="#666">
       <tspan x="388" dy="0">Loop fino a</tspan>
       <tspan x="388" dy="12">convergenza</tspan>
     </text>
-    <line x1="372" y1="310" x2="316" y2="310" stroke="#555" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow)"/>
+    <path d="M310 300 H372 V230 H316" fill="none" stroke="#555" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+    <text x="388" y="258" font-size="12" fill="#666">
+      <tspan x="388" dy="0">Loop fino a</tspan>
+      <tspan x="388" dy="12">convergenza</tspan>
+    </text>
   </svg>
 
   <div aria-hidden="false">
-    <a href="/ai-development-workflow/comprendere.html" aria-label="Vai alla pagina Fase 0: Comprendere" title="Fase 0: Comprendere" style="position: absolute; left: 8.4%; top: 0%; width: 40.8%; height: 9.5%; display: block; text-decoration: none;"><span aria-hidden="true" style="display: block; width: 100%; height: 100%; opacity: 0;">Fase 0</span></a>
-    <a href="/ai-development-workflow/libreria-prompt.html#fase-0-comprendere" aria-label="Vai al prompt della Fase 0: Comprendere" title="Prompt Fase 0" style="position: absolute; left: 44.2%; top: 1.7%; display: grid; place-items: center; width: 4.7%; min-width: 24px; max-width: 28px; aspect-ratio: 1; color: inherit; text-decoration: none; font-size: clamp(0.95rem, 1.6vw, 1.15rem); line-height: 1; border-radius: 6px;">📜</a>
-    <a href="/ai-development-workflow/progettare.html" aria-label="Vai alla pagina Fase 1: Progettare" title="Fase 1: Progettare" style="position: absolute; left: 8.4%; top: 14.5%; width: 40.8%; height: 9.5%; display: block; text-decoration: none;"><span aria-hidden="true" style="display: block; width: 100%; height: 100%; opacity: 0;">Fase 1</span></a>
-    <a href="/ai-development-workflow/libreria-prompt.html#fase-1-progettare" aria-label="Vai al prompt della Fase 1: Progettare" title="Prompt Fase 1" style="position: absolute; left: 44.2%; top: 16.6%; display: grid; place-items: center; width: 3.7%; min-width: 24px; max-width: 28px; aspect-ratio: 1; color: inherit; text-decoration: none; font-size: clamp(0.95rem, 1.6vw, 1.15rem); line-height: 1; border-radius: 6px;">📜</a>
-    <a href="/ai-development-workflow/scomporre.html" aria-label="Vai alla pagina Fase 2: Scomporre" title="Fase 2: Scomporre" style="position: absolute; left: 8.4%; top: 28.4%; width: 40.8%; height: 9.5%; display: block; text-decoration: none;"><span aria-hidden="true" style="display: block; width: 100%; height: 100%; opacity: 0;">Fase 2</span></a>
-    <a href="/ai-development-workflow/libreria-prompt.html#fase-2-scomporre" aria-label="Vai al prompt della Fase 2: Scomporre" title="Prompt Fase 2" style="position: absolute; left: 44.2%; top: 30.4%; display: grid; place-items: center; width: 4.7%; min-width: 24px; max-width: 28px; aspect-ratio: 1; color: inherit; text-decoration: none; font-size: clamp(0.95rem, 1.6vw, 1.15rem); line-height: 1; border-radius: 6px;">📜</a>
-    <a href="/ai-development-workflow/implementare.html" aria-label="Vai alla pagina Fase 3: Implementare" title="Fase 3: Implementare" style="position: absolute; left: 8.4%; top: 43.4%; width: 40.8%; height: 9.5%; display: block; text-decoration: none;"><span aria-hidden="true" style="display: block; width: 100%; height: 100%; opacity: 0;">Fase 3</span></a>
-    <a href="/ai-development-workflow/libreria-prompt.html#fase-3-implementare" aria-label="Vai al prompt della Fase 3: Implementare" title="Prompt Fase 3" style="position: absolute; left: 44.2%; top: 45.4%; display: grid; place-items: center; width: 4.7%; min-width: 24px; max-width: 28px; aspect-ratio: 1; color: inherit; text-decoration: none; font-size: clamp(0.95rem, 1.6vw, 1.15rem); line-height: 1; border-radius: 6px;">📜</a>
-    <a href="/ai-development-workflow/validare.html" aria-label="Vai alla pagina Fase 4: Validare" title="Fase 4: Validare" style="position: absolute; left: 8.4%; top: 57.8%; width: 40.8%; height: 9.5%; display: block; text-decoration: none;"><span aria-hidden="true" style="display: block; width: 100%; height: 100%; opacity: 0;">Fase 4</span></a>
-    <a href="/ai-development-workflow/libreria-prompt.html#fase-4-validare" aria-label="Vai al prompt della Fase 4: Validare" title="Prompt Fase 4" style="position: absolute; left: 44.2%; top: 59.8%; display: grid; place-items: center; width: 4.7%; min-width: 24px; max-width: 28px; aspect-ratio: 1; color: inherit; text-decoration: none; font-size: clamp(0.95rem, 1.6vw, 1.15rem); line-height: 1; border-radius: 6px;">📜</a>
-    <a href="/ai-development-workflow/spiegare.html" aria-label="Vai alla pagina Fase 5: Spiegare" title="Fase 5: Spiegare" style="position: absolute; left: 8.4%; top: 72.4%; width: 40.8%; height: 9.5%; display: block; text-decoration: none;"><span aria-hidden="true" style="display: block; width: 100%; height: 100%; opacity: 0;">Fase 5</span></a>
-    <a href="/ai-development-workflow/libreria-prompt.html#fase-5-spiegare" aria-label="Vai al prompt della Fase 5: Spiegare" title="Prompt Fase 5" style="position: absolute; left: 44.2%; top: 74.4%; display: grid; place-items: center; width: 4.7%; min-width: 24px; max-width: 28px; aspect-ratio: 1; color: inherit; text-decoration: none; font-size: clamp(0.95rem, 1.6vw, 1.15rem); line-height: 1; border-radius: 6px;">📜</a>
+    <a href="/ai-development-workflow/comprendere.html" aria-label="Vai alla pagina Fase 0: Comprendere" title="Fase 0: Comprendere" style="position: absolute; left: 8.4%; top: 0px; width: 40.8%; height: 9.5%; display: block; text-decoration: none;"><span aria-hidden="true" style="display: block; width: 100%; height: 100%; opacity: 0;">Fase 0</span></a>
+    <a href="/ai-development-workflow/libreria-prompt.html#fase-0-comprendere" aria-label="Vai al prompt della Fase 0: Comprendere" title="Prompt Fase 0" style="position: absolute; left: 44.2%; top: 7px; display: grid; place-items: center; width: 4.7%; min-width: 24px; max-width: 28px; aspect-ratio: 1; color: inherit; text-decoration: none; font-size: clamp(0.95rem, 1.6vw, 1.15rem); line-height: 1; border-radius: 6px;">📜</a>
+    <a href="/ai-development-workflow/progettare.html" aria-label="Vai alla pagina Fase 1: Progettare" title="Fase 1: Progettare" style="position: absolute; left: 8.4%; top: 69px; width: 40.8%; height: 9.5%; display: block; text-decoration: none;"><span aria-hidden="true" style="display: block; width: 100%; height: 100%; opacity: 0;">Fase 1</span></a>
+    <a href="/ai-development-workflow/libreria-prompt.html#fase-1-progettare" aria-label="Vai al prompt della Fase 1: Progettare" title="Prompt Fase 1" style="position: absolute; left: 44.2%; top: 79px; display: grid; place-items: center; width: 3.7%; min-width: 24px; max-width: 28px; aspect-ratio: 1; color: inherit; text-decoration: none; font-size: clamp(0.95rem, 1.6vw, 1.15rem); line-height: 1; border-radius: 6px;">📜</a>
+    <a href="/ai-development-workflow/scomporre.html" aria-label="Vai alla pagina Fase 2: Scomporre" title="Fase 2: Scomporre" style="position: absolute; left: 8.4%; top: 140px; width: 40.8%; height: 9.5%; display: block; text-decoration: none;"><span aria-hidden="true" style="display: block; width: 100%; height: 100%; opacity: 0;">Fase 2</span></a>
+    <a href="/ai-development-workflow/libreria-prompt.html#fase-2-scomporre" aria-label="Vai al prompt della Fase 2: Scomporre" title="Prompt Fase 2" style="position: absolute; left: 44.2%; top: 148px; display: grid; place-items: center; width: 4.7%; min-width: 24px; max-width: 28px; aspect-ratio: 1; color: inherit; text-decoration: none; font-size: clamp(0.95rem, 1.6vw, 1.15rem); line-height: 1; border-radius: 6px;">📜</a>
+    <a href="/ai-development-workflow/implementare.html" aria-label="Vai alla pagina Fase 3: Implementare" title="Fase 3: Implementare" style="position: absolute; left: 8.4%; top: 209px; width: 40.8%; height: 9.5%; display: block; text-decoration: none;"><span aria-hidden="true" style="display: block; width: 100%; height: 100%; opacity: 0;">Fase 3</span></a>
+    <a href="/ai-development-workflow/libreria-prompt.html#fase-3-implementare" aria-label="Vai al prompt della Fase 3: Implementare" title="Prompt Fase 3" style="position: absolute; left: 44.2%; top: 218px; display: grid; place-items: center; width: 4.7%; min-width: 24px; max-width: 28px; aspect-ratio: 1; color: inherit; text-decoration: none; font-size: clamp(0.95rem, 1.6vw, 1.15rem); line-height: 1; border-radius: 6px;">📜</a>
+    <a href="/ai-development-workflow/validare.html" aria-label="Vai alla pagina Fase 4: Validare" title="Fase 4: Validare" style="position: absolute; left: 8.4%; top: 278px; width: 40.8%; height: 9.5%; display: block; text-decoration: none;"><span aria-hidden="true" style="display: block; width: 100%; height: 100%; opacity: 0;">Fase 4</span></a>
+    <a href="/ai-development-workflow/libreria-prompt.html#fase-4-validare" aria-label="Vai al prompt della Fase 4: Validare" title="Prompt Fase 4" style="position: absolute; left: 44.2%; top: 287px; display: grid; place-items: center; width: 4.7%; min-width: 24px; max-width: 28px; aspect-ratio: 1; color: inherit; text-decoration: none; font-size: clamp(0.95rem, 1.6vw, 1.15rem); line-height: 1; border-radius: 6px;">📜</a>
+    <a href="/ai-development-workflow/spiegare.html" aria-label="Vai alla pagina Fase 5: Spiegare" title="Fase 5: Spiegare" style="position: absolute; left: 8.4%; top: 347px; width: 40.8%; height: 9.5%; display: block; text-decoration: none;"><span aria-hidden="true" style="display: block; width: 100%; height: 100%; opacity: 0;">Fase 5</span></a>
+    <a href="/ai-development-workflow/libreria-prompt.html#fase-5-spiegare" aria-label="Vai al prompt della Fase 5: Spiegare" title="Prompt Fase 5" style="position: absolute; left: 44.2%; top: 357px; display: grid; place-items: center; width: 4.7%; min-width: 24px; max-width: 28px; aspect-ratio: 1; color: inherit; text-decoration: none; font-size: clamp(0.95rem, 1.6vw, 1.15rem); line-height: 1; border-radius: 6px;">📜</a>
   </div>
 </div>
 
+## Output del workflow
+
+Ogni fase lascia qualcosa di concreto:
+
+- `AGENTS.md`: contesto, obiettivo, vincoli e indicazioni operative
+- `PLAN.md`: piano dettagliato e spiegabile
+- `TASKS.md`: task pronti per implementare senza rileggere tutto il piano
+- codice validato: modifiche limitate ai task e passate in review
+- spiegazione finale: cosa è stato fatto, perché e come funziona
+
 ## Principi
 
-**1. Pianificare costa meno che correggere**  
-L'errore trovato prima costa poco.  
-Lo stesso errore trovato nel codice costa molto di più.
+**1. Pianificare costa meno che programmare**  
+Conviene investire più tempo e più token nella pianificazione, dove lo spazio d'azione è più ridotto.  
+Il piano è più compatto del codice, e i task sono più operativi del piano completo. Trovare un errore a monte costa meno che scoprirlo quando il codice è già stato scritto.
 
-**2. Bisogna capire il contesto prima del piano**  
-Se esiste già una soluzione, va capita prima di cambiarla.  
-Se non esiste, il contesto va costruito bene.
+**2. La qualità nasce dall'iterazione**  
+Il primo piano non è quello finale.  
+Il primo codice prodotto non è la soluzione migliore.  
+Si migliora tornando sul piano, facendo review, correggendo e validando fino a convergenza.
 
-**3. La qualità nasce dall'iterazione**  
-Il primo piano non basta.  
-Il primo review pass non basta.
-
-**4. Il codice va saputo spiegare**  
-Se non sai raccontare come funziona, non lo stai controllando davvero.
+**3. Il lavoro va capito fino in fondo**  
+Bisogna capire cosa è stato fatto, perché è stato fatto così e come funziona nel codice.
 
 ## Come usarlo
 
-Usa questo flusso per ogni task non banale.
+Il sito è organizzato per seguire il workflow passo dopo passo.
 
-Inizia da Comprendere. Poi investi davvero tempo in Progettare: crea il piano, criticalo, miglioralo, ripeti. Quando il piano converge, scomponilo in task piccoli e implementa un task alla volta. Infine valida e spiega.
+Dal diagramma puoi aprire la pagina di una fase specifica oppure andare direttamente al prompt collegato.
 
-L'obiettivo non è produrre più codice. È produrre codice capito, verificato e difendibile.
+Il percorso pratico è: chiarire il contesto in `AGENTS.md`, costruire il piano in `PLAN.md`, trasformarlo in `TASKS.md`, implementare un task alla volta, validare il codice e chiudere spiegando il lavoro prodotto.
+
+Dopo le pagine delle fasi trovi la Libreria Prompt, che raccoglie tutti i prompt utili in un unico punto per copiarli e riusarli rapidamente.

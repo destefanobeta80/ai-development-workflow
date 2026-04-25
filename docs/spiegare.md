@@ -2,31 +2,40 @@
 
 ## Scopo
 
-Assicurarsi di aver capito davvero il codice prodotto.
+Assicurarsi di aver compreso tutto il lavoro prodotto.
 
 ## Descrizione
 
 Questa fase chiude il workflow.
 
-Il codice va saputo raccontare. Non solo a blocchi, ma come flusso, come scelte e come compromessi. Se non riesci a spiegare perché è stato fatto così, non lo stai ancora controllando bene.
+Non basta sapere che il codice funziona. Bisogna capire il cosa e il perché della soluzione, cioè il piano, e il come dell'implementazione, cioè il codice.
+
+Questa fase serve a verificare che il lavoro non sia stato solo accettato, ma davvero compreso. Devi saper spiegare le scelte fatte, il flusso del codice, i punti delicati e il modo in cui il risultato risponde al task.
 
 ## Prompt
 
 ```text
-Rileggi AGENTS.md e spiegami il codice prodotto come se dovessi difenderlo in review senza poter delegare la risposta al modello.
+Rileggi AGENTS.md, TASKS.md e il codice prodotto.
 
-Voglio capire bene:
-- come funziona il flusso del codice
-- perché sono state fatte queste scelte
-- come le modifiche rispondono al task
+Aiutami a verificare che io abbia compreso davvero tutto il lavoro prodotto.
+
+Spiegami in modo chiaro:
+- cosa è stato implementato
+- perché questa soluzione risponde al task
+- quali scelte del piano sono state applicate
+- come funziona il flusso principale del codice
+- quali file o parti sono più importanti
 - quali punti delicati o rischiosi restano
-- quali domande dovrei saper gestire in review
+- quali verifiche sono state fatte
 
-Chiudi con una sintesi breve, chiara e difendibile.
+Chiudi con una sintesi breve che distingua:
+1. cosa è stato fatto
+2. perché è stato fatto così
+3. come funziona nel codice
 ```
 
-## Condizione di uscita
+## Risultato
 
-La fase è chiusa quando puoi spiegare il codice senza leggere una risposta generata al posto tuo.
+La fase è chiusa quando puoi spiegare il lavoro senza leggere una risposta generata al posto tuo.
 
-Se riesci solo a descrivere cosa fa, ma non perché è fatto così, il lavoro non è ancora davvero chiuso.
+Se riesci solo a descrivere cosa fa il codice, ma non perché è stato fatto così e come funziona davvero, il lavoro non è ancora chiuso.
